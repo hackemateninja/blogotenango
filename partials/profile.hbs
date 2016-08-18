@@ -1,0 +1,15 @@
+<div class="widget widget-profile">
+    <div class="widget-profile-cover overlay {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}"></div>
+    <div class="widget-profile-header">
+        <a class="widget-profile-logo" href="{{@blog.url}}">
+                <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+        </a>
+    </div>
+    <span class="widget-profile-title label label-xlg label-minty arrowed-in arrowed-in-right">{{@blog.title}}</span>
+    <p class="widget-profile-desc">
+            {{@blog.description}}
+        {{> "publicidad2"}}
+    </p>
+     {{> "site_stat"}}
+     {{> "social"}}
+</div>

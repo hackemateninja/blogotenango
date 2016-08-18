@@ -1,0 +1,22 @@
+{
+    "name": "Blogotenango",
+    "description": "A Simple And Elegant Ghost Theme Derive From Default Theme Casper",
+    "homepage": "https://www.hackemate.ninja",
+    "version": "1.0",
+    "author": {
+        "name": "hackemate",
+        "url": "https://github.com/hackemateninja"
+    },
+    "keywords": [
+        "simple",
+        "elegant",
+        "ghost",
+        "theme",
+        "hackemate",
+        "blogotenango"
+    ],
+    "engines": {
+        "node": ">= 4"
+    },
+    "license": "MIT"
+}

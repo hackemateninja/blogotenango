@@ -1,0 +1,30 @@
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+{{#if image}}
+<figure class="author-image">
+    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+</figure>
+{{/if}}
+{{/author}}
+<figure class="author-info">
+    <section class="author-info-title">
+        <span><time class="post-date pull-right" datetime="{{date format='YYYY-MM-DD'}}">Fecha：{{date format="YYYY-MM-DD"}}</time></span>
+        {{#author}}
+        <span>Escrito por：{{name}}</span>
+    </section>
+    <section class="author-info-content">
+        <span class="author-info-bio">
+        <center>
+           <a href="https://m.do.co/c/cdffe48883fa" target="_blank"><img src="{{asset "/images/digitalocean.jpg"}}" alt="digitalocean"></a>
+       </center>
+          {{bio}}
+         </span>
+        <section class="author-info-social">
+            <a href="{{twitter_url}}" class="author-info-social-website">Twitter</a>
+            <a href="{{facebook_url}}" class="author-info-social-feature">Facebook</a>
+            <a href="https://www.youtube.com/c/nitrowittyoficial" class="author-info-social-weibo">YouTube</a>
+            <a href="https://github.com/hackemateninja" class="author-info-social-github">GitHub</a>
+        </section>
+        {{/author}}
+    </section>
+</figure>

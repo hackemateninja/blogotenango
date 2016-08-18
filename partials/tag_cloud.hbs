@@ -1,0 +1,20 @@
+<div class="widget widget-tag-cloud">
+	<div class="widget-title">
+		<div class="widget-title-meta">
+			<i class="fa fa-tags"></i>&nbsp;
+			<span class="title-meta-word">Tags</span>
+		</div>
+	</div>
+	<div class="tag-cloud-content">
+		<!-- {{#foreach tags}}
+		<a href="{{url}}" class="tag-item">{{name}}<span class="post-count">{{post_count}}</span></a>
+		{{/foreach}} -->
+		{{! Tag Cloud }}
+		{{#get "tags" limit="all" include="count.posts" order="count.posts desc" }}
+			{{#foreach tags}}
+                <a href="/tag/{{slug}}">{{name}} <span class="badge">({{count.posts}})</span></a>
+			{{/foreach}}
+		{{/get}}
+	</div>
+
+</div>
